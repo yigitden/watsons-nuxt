@@ -1,12 +1,14 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div class="container mx-auto  bg-gray-500 p-3">
-   <h1>asd</h1>
+  <div>
+    <Header />
   </div>
 </template>
 
 <script>
+import Header from "./Header/index.vue";
 export default {
-  name: 'NuxtTutorial'
-}
+  name: "NuxtTutorial",
+  components: { Header },
+};
 </script>

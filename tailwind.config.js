@@ -17,7 +17,14 @@ module.exports = {
       },
     
       extend: {
-      
+        colors:{
+          primary:'#FF27AD',
+          secondary:'#0099A8',
+          coal:'#2A2A48',
+          graphene:'#485363',
+          grey:'#8493A8',
+          smoke:'#ECECEC',
+        }
       },
     },
     plugins: [],

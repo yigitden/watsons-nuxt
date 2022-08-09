@@ -1,11 +1,11 @@
 <template>
-  <img src={{logo}}/>
+  <img class="w-36 h-7 "  src="../../assets/images/logo.png"/>
 </template>
 
-<script>
-import logo from '../../assets/images/logo.png'
-export default {
+<script> 
 
+export default {
+   
 }
 </script>
 
