@@ -4,7 +4,7 @@
       <p class="text-grey">
         Hello, <span class="font-bold text-coal"> Clara Clara </span>
       </p>
-      <img src="../../assets/images/user.png" />
+      <img src="/images/user.png" />
 
       <font-awesome-icon :icon="['fas', 'angle-down']" />
     </div>

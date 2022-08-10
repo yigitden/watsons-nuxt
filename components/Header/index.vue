@@ -1,7 +1,10 @@
 <template>
-  <div class="container mx-auto bg-white">
+  <div class="xl:mx-[140px] bg-white sticky">
     <div class="flex items-center">
-      <div class="flex justify-between items-center w-3/4"><Logo /> <SearchBar /></div>
+      <div class="flex justify-between items-center w-3/4">
+        <Logo /> 
+        <SearchBar />
+      </div>
       <div class="w-1/4">
         <User />
       </div>
