@@ -9,7 +9,7 @@
       <font-awesome-icon :icon="['fas', 'angle-down']" />
     </div>
 
-    <div class="space-x-5"><font-awesome-icon :icon="['fas', 'basket-shopping']" /></div>
+    <div class="pl-4"><font-awesome-icon :icon="['fas', 'basket-shopping']" /></div>
   </div>
 </template>
 

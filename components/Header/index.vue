@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:mx-[140px] bg-white sticky">
+  <div class="xl:mx-[140px] bg-white sticky mt-3">
     <div class="flex items-center">
       <div class="flex justify-between items-center w-3/4">
         <Logo /> 
