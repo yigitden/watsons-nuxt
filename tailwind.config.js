@@ -13,17 +13,23 @@ module.exports = {
         sm:'480px',
         md:'768px',
         lg:'976px',
-        xl:'1440px'
+        xl:'1440px',
+        xxl:'1536px'
       },
     
       extend: {
         colors:{
           primary:'#FF27AD',
           secondary:'#0099A8',
+          secondary10:'#0099A81A',
           coal:'#2A2A48',
+          coal60:'#2a2a4899',
           graphene:'#485363',
           grey:'#8493A8',
           smoke:'#ECECEC',
+          smoke50:'#ECECEC',
+          focus:'#6C8EEF',
+          titan:'#F2F0FF',
         }
       },
     },
