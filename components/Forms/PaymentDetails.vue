@@ -1,7 +1,7 @@
 <template>
   <div>
     <FormTitle title="Payment Details" />
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 ">
         <div  >
             <Input type="text" id="cardholder" labelText="Card Holder Name *"/>
              <p   class="text-xs	text-coal60 mt-2 mb-4">Full name on card</p>
