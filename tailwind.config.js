@@ -27,7 +27,8 @@ module.exports = {
           graphene:'#485363',
           grey:'#8493A8',
           smoke:'#ECECEC',
-          smoke50:'#ECECEC',
+          smoke30:'#ECECEC4D',
+          smoke50:'#ECECEC80',
           focus:'#6C8EEF',
           titan:'#F2F0FF',
         }
