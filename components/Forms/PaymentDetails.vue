@@ -1,36 +1,27 @@
 <template>
   <div>
     <FormTitle title="Payment Details" />
-    <div class="grid grid-cols-2 gap-10 ">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
         <div  >
-            <Input type="text" id="cardholder" labelText="Card Holder Name *"/>
+            <Input type="text" id="cardholder" labelText="Card Holder Name *" v-model="card.holder"/>
              <p   class="text-xs	text-coal60 mt-2 mb-4">Full name on card</p>
-            <Input type="text" id="cardnumber" labelText="Card Number *"/>
+            <Input type="text" id="cardnumber" labelText="Card Number *" v-model="card.number"/>
              <p   class="text-xs	text-coal60 mt-2 mb-4">Enter digits without spaces</p>
              <div class="grid grid-cols-2 gap-10">
-                <div ><Input type="text" id="cardnumber" labelText="Expiry Date *" placeholder="MM / YY" /></div>
-                <div ><Input type="text" id="cardnumber" labelText="CVV *" /></div>
+                <div ><Input type="text" id="cardnumber" labelText="Expiry Date *" placeholder="MM / YY" v-model="card.exp"/></div>
+                <div ><Input type="text" id="cardnumber" labelText="CVV *" v-model="card.cvv" />{{card.cvv}}x</div>
              </div>
 
 
 
             
         </div>
-         <div class="relative">
-              <div class="absolute h-48	w-72 bg-white	border rounded-xl	p-6 flex flex-col z-20">
-                <div class="self-end"><img src="/images/card_chip.png"/></div>
-                <div><p class="font-bold	text-xl text-graphene my-4">0000 0000 0000 0000</p></div>
-                <div><p class="text-sm	text-grey mt-4 mb-2">Card Holder</p></div>
-                <div><p class="font-medium	font-medium">MM / YY</p></div>
-              </div>
-              <div class="absolute h-48	w-72	border rounded-xl	  flex flex-col top-12	left-20 z-10	">
-                <div class="h-10 bg-smoke my-4"> </div>
-                <div class="self-end pr-6"> 
-                <div><p class="font-bold	text-sm	 text-grey mb2 ">CVV</p></div>
-                <div><p class="text-graphene font-bold	">XXX</p></div> 
-                </div>
-              </div>
-          </div>
+      <CreditCard
+      :holder="card.holder"
+      :number="card.number"
+      :exp="card.exp"
+      :cvv="card.cvv"
+      />
     </div>
 
 
@@ -41,14 +32,27 @@
 <script>
 import FormTitle from "./FormTitle.vue";
 import Input from "../Input/index.vue";
+import CreditCard from "./CreditCard.vue";
  
 export default {
   name: "PaymentDetails",
-  components: { FormTitle, Input },
+  components: { FormTitle, Input, CreditCard },
+  data(){
+    
+    return{
+      
+      card:{
+        holder: "Card Holder",
+        number: "0000 0000 0000 0000",
+        exp: "MM / YY",
+        cvv: "XXX",
+      }
+    }
+  }
    
         
 };
- 
+
 </script>
 
 <style></style>

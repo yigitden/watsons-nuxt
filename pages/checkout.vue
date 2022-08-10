@@ -1,7 +1,7 @@
 <template>
-  <div >
+  <div class="p-4 md:p-0" >
     <Title/>
-    <div class="grid grid-cols-3 mx-[140px] gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 md:mx-[140px] gap-10">
       <div class="col-span-2 ">
         <ShippingForm/>
         <PaymentDetails/>

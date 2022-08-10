@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <p class="text-xl font-medium my-9">Shopping cart summary</p>
 
     <div class="rounded-md p-6 border border-smoke shadow">

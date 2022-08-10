@@ -9,7 +9,7 @@
         required
       />
     </div>
-    <div class="w-1/3">
+    <div class="w-1/3 flex justify-end">
       <Button text='SUBSCRIBE'/>
     </div>
   </div>

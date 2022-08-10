@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-2 bg-titan px-[140px]">
-    <div class="flex flex-col justify-center">
+  <div class="grid md:grid-cols-2 grid-cols-1 bg-titan md:px-[140px]">
+     <div class="flex flex-col justify-center">
       <p class="font-bold text-sm text-grey">{{firstLine}}</p>
       <p class="text-4xl text-coal font-bold">{{secondLine}}</p>
       <p class="text-graphene my-4">
@@ -13,8 +13,8 @@
     <div class="flex items-center justify-center">
       <img :src="image" class="max-w-[580px] max-h-[400px]"/>
     </div>
-  </div>
-</template>
+   </div>
+ </template>
 
 <script>
 export default {

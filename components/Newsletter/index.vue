@@ -1,8 +1,10 @@
 <template>
-<div class="bg-titan grid grid-cols-2 px-[140px] py-10"> 
+<div class="bg-titan grid  grid-cols-1 space-y-4 md:space-y-0 md:grid-cols-2  md:px-[140px]  py-10"> 
+ 
   <TextNewsletter />
   <Subscribe/>
-</div>
+  </div>
+ 
 </template>
 
 <script>

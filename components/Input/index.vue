@@ -10,6 +10,9 @@
           class="border border-smoke text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
           :placeholder="placeholder"
           :pattern="pattern"
+        
+          :value="modelValue"
+           @input="$emit('update:modelValue', $event.target.value)"
           required="required"
         />
        
@@ -24,7 +27,8 @@
 <script>
 export default {
     name:'Input',
-    props:['placeholder','type','id','labelText','pattern']
+    props:['placeholder','type','id','labelText','pattern','v-model','modelValue'],
+    emits: ['update:modelValue']
 
 }
 </script>
