@@ -1,14 +1,9 @@
 <template>
-  <img class="w-36 h-7 "  src="/images/logo.png"/>
+  <nuxt-link to="/"><img class="w-36 h-7" src="/images/logo.png" /> </nuxt-link>
 </template>
 
-<script> 
-
-export default {
-   
-}
+<script>
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>
