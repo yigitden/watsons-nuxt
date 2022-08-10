@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <FormTitle title="Payment Details" />
+  <div><i class="fa-solid fa-dollar-sign"></i>
+    <FormTitle title="Payment Details" :icon="['fas', 'dollar-sign']" />
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
         <div  >
             <Input type="text" id="cardholder" labelText="Card Holder Name *" v-model="card.holder"/>

@@ -1,8 +1,8 @@
 <template>
-  <div class="my-9 flex">
-    <div class="bg-smoke border radius-md"></div>
+  <div class="my-9 flex items-center">
+    <div class="bg-smoke30 border rounded  mr-4 h-9 w-9 flex justify-center items-center"><font-awesome-icon :icon="icon" /></div>
     <p class="text-xl font-medium">
-      <font-awesome-icon :icon="icon" />{{title}}
+      {{title}}
     </p>
   </div>
 </template>

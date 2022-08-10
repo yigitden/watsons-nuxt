@@ -1,8 +1,6 @@
 <template>
 <div>
-   <FormTitle
-   title="Shopping details"
-   :icon="['fas', 'box-taped']"/>
+   <FormTitle title="Shopping details"  :icon="['fas', 'inbox']"/>
       
 
   <form>
