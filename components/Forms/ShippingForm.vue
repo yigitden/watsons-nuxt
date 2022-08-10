@@ -1,12 +1,9 @@
 <template>
 <div>
-    <div class="my-9 flex">
-        <div class="bg-smoke border radius-md">
-          
+   <FormTitle
+   title="Shopping details"
+   :icon="['fas', 'box-taped']"/>
       
-      </div>
-        <p class="text-xl font-medium"><font-awesome-icon :icon="['fas', 'box-taped']" />Shipping Details</p>
-    </div>
 
   <form>
     <div class="grid gap-6 mb-6 md:grid-cols-2">
@@ -90,7 +87,8 @@
 <script>
 import Input from '../Input/index.vue';
 import TextArea from '../TextArea/index.vue';
-export default { components: { Input, TextArea } };
+import FormTitle from './FormTitle.vue';
+export default { components: { Input, TextArea, FormTitle } };
 </script>
 
 <style></style>
