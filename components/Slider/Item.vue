@@ -10,8 +10,8 @@
         <Button :text="buttonText" padding="py-2 px-4" />
       </div>
     </div>
-    <div>
-      <img :src="image" />
+    <div class="flex items-center justify-center">
+      <img :src="image" class="max-w-[580px] max-h-[400px]"/>
     </div>
   </div>
 </template>
