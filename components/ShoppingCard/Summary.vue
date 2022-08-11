@@ -2,35 +2,18 @@
   <div >
     <p class="text-xl font-medium my-9">Shopping cart summary</p>
 
-    <div class="rounded-md p-6 border border-smoke shadow">
-      <div
-        class="rounded-md p-2 border border-smoke shadow-sm flex items-center"
-      >
-        <div class="w-1/3">
-          <img src="/images/thumbnail.jpg" />
-        </div>
-        <div
-          class="w-2/3 text-sm flex flex-col  space-y-6 pl-2"
-        >
-          <p class="font-medium text-coal">Ürün ismi</p>
-          <div class="text-graphene flex items-center justify-between w-full">
-            <div>29,35 TL</div>
-            <div class="space-x-2 flex items-center">
-              <div
-                class="border border-smoke rounded bg-smoke30 font-bold cursor-pointer h-6 w-6 text-center"
-              >
-                <font-awesome-icon :icon="['fas', 'plus']" />
-              </div>
-              <div class="text-base">1</div>
-              <div
-                class="border border-smoke rounded bg-smoke30 h-6 w-6 text-center font-bold cursor-pointer"
-              >
-                <font-awesome-icon :icon="['fas', 'minus']" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="rounded-md p-6 border border-smoke shadow space-y-6">
+      <Product
+      productName="Herbal Science Boom Butter Hair Care Oil 190ml"
+      productPrice="44,95 TL"
+      productImage="/images/product.png"
+      />
+      <Product
+      productName="Ashley Joy Strengthening Shampoo 400ml"
+      productPrice="29,45 TL"
+      productImage="/images/product2.png"
+      />
+         
 
       <div class="my-6">
         <Input type="text" id="discount" placeholder="Discount code" />
@@ -38,11 +21,11 @@
       <div class="space-y-4">
         <div class="flex justify-between">
           <p>Subtotal:</p>
-          <p>90 $</p>
+          <p>74,40 TL</p>
         </div>
         <div class="flex justify-between">
           <p>Shipping:</p>
-          <p>90 $</p>
+          <p>10.50 TL</p>
         </div>
       </div>
 
@@ -50,7 +33,7 @@
 
       <div class="text-xl text-coal font-bold flex justify-between">
         <p>Total:</p>
-        <p>90 $</p>
+        <p>84,90 TL</p>
       </div>
     </div>
   </div>
@@ -58,7 +41,8 @@
 
 <script>
 import Input from "../Input/index.vue";
-export default { components: { Input } };
+import Product from "./Product.vue";
+export default { components: { Input, Product } };
 </script>
 
 <style></style>
