@@ -2,7 +2,7 @@
   <div >
     <p class="text-xl font-medium my-9">Shopping cart summary</p>
 
-    <div class="rounded-md p-6 border border-smoke shadow space-y-6">
+    <div class="rounded-md p-4 border border-smoke shadow space-y-6">
       <Product
       productName="Herbal Science Boom Butter Hair Care Oil 190ml"
       productPrice="44,95 TL"

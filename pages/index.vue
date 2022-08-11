@@ -5,7 +5,7 @@
     <Slider/>
        <Title />
     <div class="md:mx-[140px]">
-      <div class="grid lg:grid-cols-4 grid-cols-2 md:gap-10 gap-4 mb-10">
+      <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-16 gap-4 mb-10 p-4 lg:p-0">
         <Card
           v-for="product in products"
           :key="product.id"

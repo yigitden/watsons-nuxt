@@ -6,7 +6,7 @@
                 <div><p class="text-sm	text-grey mt-4 mb-2">{{holder}}</p></div>
                 <div><p class="font-medium	font-medium">{{exp}}</p></div>
               </div>
-              <div class="absolute h-48	w-72	border rounded-xl	  flex flex-col top-12	left-20 z-10	">
+              <div class="absolute h-48	w-72	border rounded-xl	  flex flex-col top-12 left-16	lg:left-20 z-10	">
                 <div class="h-10 bg-smoke my-4"> </div>
                 <div class="self-end pr-6"> 
                 <div><p class="font-bold	text-sm	 text-grey mb2 ">CVV</p></div>

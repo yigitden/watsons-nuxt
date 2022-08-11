@@ -1,15 +1,15 @@
 <template>
   <div
-        class="rounded-md p-2 border border-smoke shadow-sm flex items-center"
+        class="rounded-md p-2 border border-smoke shadow-sm flex flex-row  items-center"
       >
-        <div class="w-1/3">
+        <div class="lg:w-1/3  flex justify-center mb-4 lg:mb-0 ">
           <img :src="`${productImage}`" />
         </div>
         <div
           class="w-2/3 text-sm flex flex-col  space-y-6 pl-2"
         >
           <p class="font-medium text-coal">{{productName}}</p>
-          <div class="text-graphene flex items-center justify-between w-full">
+          <div class="text-graphene flex flex-row items-start  items-center justify-between w-full">
             <div>{{productPrice}}</div>
             <div class="space-x-2 flex items-center">
               <div

@@ -1,7 +1,16 @@
 <template>
  
-    <div class="flex justify-between my-4">
-        <div v-for="cat in categories"  :key="cat.index" class="uppercase font-bold p-4 cursor-pointer hover:bg-smoke30 duration-500">{{cat}}</div>
+    <div class="flex justify-between my-4 flex-col lg:flex-row w-full">
+        <div v-for="cat in categories"  :key="cat.index" 
+        class="uppercase font-bold p-4 cursor-pointer hover:bg-smoke30 duration-500 flex justify-between items-center">
+        <div class="lg:hidden"> 
+        <font-awesome-icon :icon="['fas', 'angle-left']" />  
+        </div>
+        {{cat}}  
+        </div>
+        
+              
+  
     </div>
  
 </template>

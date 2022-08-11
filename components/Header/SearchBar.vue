@@ -6,13 +6,14 @@
         </div>
         <input type="search" id="default-search"
 
-         class="block p-3 pl-10 w-full text-sm
+         class="lg:block p-3 pl-10 w-full text-sm
           text-gray-900
            bg-gray-50 
           border
           border-gray-300  
           focus:border-focus  
           rounded-full
+          hidden
           " placeholder="Write the product or category you are looking for"  >
     </div>
  

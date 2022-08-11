@@ -2,11 +2,11 @@
   <agile
     :autoplay="true"
     :fade="true"
-    :autoplay-speed="5000"
-    :navButtons="false"
+    :autoplay-speed="4000" 
     ref="carousel"
+    dots="true"
   >
-    <div class="slide relative">
+    <div class="slide relative  ">
       <Item
         image="/images/right.png"
         buttonText="SHOP NOW"
@@ -54,4 +54,8 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+ 
+<style>
+ 
+  
+</style>
