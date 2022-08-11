@@ -9,7 +9,11 @@
       <font-awesome-icon :icon="['fas', 'angle-down']" />
     </div>
 
-    <div class="pl-4"><font-awesome-icon :icon="['fas', 'basket-shopping']" /></div>
+    <div class="pl-4 inline-flex relative">
+      <font-awesome-icon :icon="['fas', 'basket-shopping']" class="w-6 h-6" />
+        <div class="inline-flex absolute -top-2 -right-3 justify-center items-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full border-2 border-white ">2</div>
+
+      </div>
   </div>
 </template>
 

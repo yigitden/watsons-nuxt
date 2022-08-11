@@ -31,6 +31,7 @@ module.exports = {
           smoke50:'#ECECEC80',
           focus:'#6C8EEF',
           titan:'#F2F0FF',
+          black80:'#000000cc'
         }
       },
     },
