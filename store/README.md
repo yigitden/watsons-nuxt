@@ -1,10 +1,29 @@
-# STORE
+# Watsons LabTurkiye
+Demo: https://watsons-nuxt.vercel.app/
 
-**This directory is not required, you can delete it if you don't want to use it.**
+## Technologies Used
 
-This directory contains your Vuex Store files.
-Vuex Store option is implemented in the Nuxt.js framework.
+- NuxtJS 
+- Tailwind
+- Nuxt Agile
+- Axios
 
-Creating a file in this directory automatically activates the option in the framework.
+## Installation
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/vuex-store).
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+ 
+```
+
+<br>
+<br>
+
+ 
