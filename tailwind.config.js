@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+ module.exports = {
     mode:'jit',
     content: [
         "./components/**/*.{js,vue,ts}",
@@ -9,6 +9,7 @@ module.exports = {
         "./nuxt.config.{js,ts}",
       ],
     theme: {
+      
       screens:{
         sm:'480px',
         md:'768px',
@@ -17,7 +18,13 @@ module.exports = {
         xxl:'1536px'
       },
     
-      extend: {
+      extend: { 
+        fontFamily:{
+          body:['Roboto']
+        },
+        maxWidth: {
+          '560': '560px',
+        },
         colors:{
           primary:'#FF27AD',
           secondary:'#0099A8',

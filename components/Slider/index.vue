@@ -4,7 +4,8 @@
     :fade="true"
     :autoplay-speed="4000" 
     ref="carousel"
-    dots="true"
+    :dots="true"
+    :navButtons="false"
   >
     <div class="slide relative  ">
       <Item

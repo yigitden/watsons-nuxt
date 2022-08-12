@@ -1,12 +1,13 @@
 <template>
-  <div class="md:px-[140px] bg-white mt-3 z-50 mb-4 lg:mb-0">
+  <div class="md:px-[140px] bg-white mt-3 z-40 mb-4 px-4 lg:mb-0">
     <div class="flex items-center">
-      <div class="w-1/4">
+      <div class="lg:w-1/4 w-1/2 flex justify-between items-center">
         <Logo />
+    
       </div>
-      <div class="w-3/4 flex justify-between   items-center ">
-            <SearchBar />
-        <User />
+      <div class="lg:w-3/4 w-1/2 flex justify-between   items-center ml-16 lg:ml-0">
+                <SearchBarMenu/>
+                    <User />
            <Basket/>
             <div class="flex items-center lg:hidden ">
         <button
@@ -54,9 +55,10 @@ import Logo from "./Logo.vue";
 import SearchBar from "./SearchBar.vue";
 import Basket from './Basket.vue';
 
+import SearchBarMenu from "./SearchBarMenu.vue";
 export default {
-  components: { User, Categories, Logo, SearchBar, Basket },
-  methods: {
+  components: { User, Categories, Logo, SearchBar, Basket, SearchBarMenu },
+  methods: { 
     handleOpen: function () {
       var menu = document.getElementById("menu");
       menu.classList.toggle("hidden");

@@ -3,7 +3,7 @@
    <FormTitle title="Shopping details"  :icon="['fas', 'inbox']"/>
       
 
-  <form>
+
     <div class="grid gap-6 mb-6 md:grid-cols-2">
      
         <Input
@@ -17,7 +17,7 @@
         labelText="Last Name *" 
         />
         <Input
-        type="text"
+        type="email"
         id="email"
         labelText="Email Address *"
          />
@@ -39,13 +39,16 @@
         >
         <select
           id="cities"
+          v-model="form.city"
+          @change="selectCity"
           class="border border-smoke text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         >
-          <option selected>Please Select</option>
-          <option value="US">United States</option>
-          <option value="CA">Canada</option>
-          <option value="FR">France</option>
-          <option value="DE">Germany</option>
+          <option selected disabled>Please Select</option>
+          <option v-for="item in city"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value" />
+ 
         </select>
       </div>
       <div>
@@ -55,15 +58,17 @@
           >District *</label
         >
         <select
-          disabled
+        v-model="form.district"
+          :disabled="disabled"
           id="district"
           class="border border-smoke text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         >
-          <option selected>Please Select</option>
-          <option value="US">United States</option>
-          <option value="CA">Canada</option>
-          <option value="FR">France</option>
-          <option value="DE">Germany</option>
+          <option selected disabled>Please Select</option>
+          <option v-for="item in district"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value" >{{item.value}}</option>
+ 
         </select>
       </div>
     </div>
@@ -78,7 +83,7 @@
         />
       
     </div>
-  </form>
+
   </div>
 </template>
 
@@ -86,7 +91,70 @@
 import Input from '../Input/index.vue';
 import TextArea from '../TextArea/index.vue';
 import FormTitle from './FormTitle.vue';
-export default { components: { Input, TextArea, FormTitle } };
+export default { 
+  components: { Input, TextArea, FormTitle },
+  data(){
+    return{
+      disabled:'disabled',
+      form:{
+        firstName:'',
+        lastName:'',
+        email:'',
+        phone:'',
+        city:'',
+        district:'',
+        address:''
+
+      },
+        city: [
+          {
+        value: 'Istanbul',
+        label: 'Istanbul'
+      },
+       {
+        value: 'Ankara',
+        label: 'Ankara'
+      }, 
+      {
+        value: 'Izmir',
+        label: 'Izmir'
+      }
+      ],
+      district: []
+    }
+  },
+   methods: {
+    selectCity() {
+      if (this.form.city === 'Istanbul') {
+        this.form.district = ''
+        this.district = []
+        this.disabled = false
+        this.district.push({
+          value: 'Bakırkoy',
+          label: 'Bakırkoy'
+        })
+      }
+      if (this.form.city === 'Ankara') {
+        this.form.district = ''
+        this.district = []
+        this.disabled = false
+        this.district.push({
+          value: 'Kızılay',
+          label: 'Kızılay'
+        })
+      }
+      if (this.form.city === 'Izmir') {
+        this.form.district = ''
+        this.district = []
+        this.disabled = false
+        this.district.push({
+          value: 'Foça',
+          label: 'Foça'
+        })
+      }
+    }
+  }
+  };
 </script>
 
 <style></style>
