@@ -1,5 +1,5 @@
 <template>
-  <div class="md:px-[140px] bg-white mt-3 z-50  p-4 ">
+  <div class="md:px-[140px] bg-white mt-3 z-50 mb-4 lg:mb-0">
     <div class="flex items-center">
       <div class="w-1/4">
         <Logo />
