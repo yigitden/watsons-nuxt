@@ -10,13 +10,13 @@
       />
     </div>
     <div class="w-1/3 flex justify-end">
-      <Button text='SUBSCRIBE'/>
+      <Button text="SUBSCRIBE" />
     </div>
   </div>
 </template>
 
 <script>
-import Button from '../Button/index.vue';
+import Button from "../Button/index.vue";
 export default { components: { Button } };
 </script>
 

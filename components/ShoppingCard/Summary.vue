@@ -1,19 +1,18 @@
 <template>
-  <div >
+  <div>
     <p class="text-xl font-medium my-9">Shopping cart summary</p>
 
     <div class="rounded-md p-4 border border-smoke shadow space-y-6">
       <Product
-      productName="Herbal Science Boom Butter Hair Care Oil 190ml"
-      productPrice="44,95 TL"
-      productImage="/images/product.png"
+        productName="Herbal Science Boom Butter Hair Care Oil 190ml"
+        productPrice="44,95 TL"
+        productImage="/images/product.png"
       />
       <Product
-      productName="Ashley Joy Strengthening Shampoo 400ml"
-      productPrice="29,45 TL"
-      productImage="/images/product2.png"
+        productName="Ashley Joy Strengthening Shampoo 400ml"
+        productPrice="29,45 TL"
+        productImage="/images/product2.png"
       />
-         
 
       <div class="my-6">
         <Input type="text" id="discount" placeholder="Discount code" />

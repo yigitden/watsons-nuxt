@@ -1,11 +1,11 @@
 <template>
   <div>
- 
- 
-    <Slider/>
-       <Title />
+    <Slider />
+    <Title />
     <div class="md:mx-[140px]">
-      <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-16 gap-4 mb-10 p-4 lg:p-0">
+      <div
+        class="grid lg:grid-cols-4 grid-cols-2 lg:gap-16 gap-4 mb-10 p-4 lg:p-0"
+      >
         <Card
           v-for="product in products"
           :key="product.id"
@@ -17,10 +17,9 @@
       </div>
     </div>
     <div class=" ">
-    <Newsletter/>
+      <Newsletter />
     </div>
   </div>
-  
 </template>
 
 <script>
@@ -33,25 +32,25 @@ import Newsletter from "../components/Newsletter/index.vue";
 import Slider from "../components/Slider/index.vue";
 export default {
   head: {
-    title: 'Watsons Home Page',
+    title: "Watsons Home Page",
     meta: [
       {
-        hid: 'description',
-        name: 'description',
-        content: 'The biggest cosmetics e-commerce web site watsons provide you to buy new and quality products fair price.'
-      }
+        hid: "description",
+        name: "description",
+        content:
+          "The biggest cosmetics e-commerce web site watsons provide you to buy new and quality products fair price.",
+      },
     ],
   },
   mounted() {
     this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
-    })
+      this.$nuxt.$loading.start();
+      setTimeout(() => this.$nuxt.$loading.finish(), 500);
+    });
   },
   name: "IndexPage",
   components: { Title, Header, Card, Input, Newsletter, Slider },
   data() {
-    
     return {
       products: [],
     };
@@ -59,7 +58,11 @@ export default {
   async created() {
     try {
       const res = await axios.get("https://dummyjson.com/products");
-      this.products = res.data.products.sort(function(a,b) { return b.rating - a.rating}).slice(0, 4);
+      this.products = res.data.products
+        .sort(function (a, b) {
+          return b.rating - a.rating;
+        })
+        .slice(0, 4);
     } catch (err) {
       console.log(err);
     }
