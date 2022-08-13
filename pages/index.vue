@@ -1,5 +1,7 @@
 <template>
+
   <div>
+    <client-only>
     <Slider />
     <Title />
     <div class="md:mx-[140px]">
@@ -19,7 +21,9 @@
     <div class=" ">
       <Newsletter />
     </div>
+    </client-only>
   </div>
+  
 </template>
 
 <script>
