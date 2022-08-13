@@ -1,5 +1,5 @@
 # Watsons LabTurkiye
-Demo: https://watsons-nuxt.vercel.app/
+Demo: https://watsons-lab.netlify.app/
 
  
 
