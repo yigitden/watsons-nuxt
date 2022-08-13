@@ -2,7 +2,7 @@ export default {
   loading: '@/components/Loading',
   target: 'static',
   router: {
-    base: '/watsons-nuxt/'
+    base: '/'
   },
  
  
