@@ -1,6 +1,10 @@
 # Watsons LabTurkiye
 Demo: https://watsons-nuxt.vercel.app/
 
+ 
+
+![Web - Mobile](previews/labturkiye.gif)
+
 ## Technologies Used
 
 - NuxtJS 
