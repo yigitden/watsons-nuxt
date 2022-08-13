@@ -1,7 +1,11 @@
 export default {
   loading: '@/components/Loading',
-
-
+  target: 'static',
+  router: {
+    base: '/watsons-nuxt/'
+  },
+ 
+ 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Watsons Lab Turkiye',
@@ -43,8 +47,6 @@ export default {
     icons:{
       solid: true,
       brands: true,
-      regular:true,
-      thin:true,
     }
   },
 
